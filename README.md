@@ -2,7 +2,7 @@
 
 run project using command :  node app  & node chat
 
-implement all functionality jwt authentication without password bcrypt , image upload, admin apis & socket
+implement all functionality jwt authentication without password bcrypt , image upload, seeder, admin apis & socket
 
 all apis in postman collection
 
