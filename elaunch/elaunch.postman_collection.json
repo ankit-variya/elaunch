@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "9e707e06-b65c-4620-9f2f-f832c3737413",
+		"name": "elaunch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/adminApi/userlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/adminApi/userlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adminApi",
+						"userlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/usersApi/list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJ1dXV1IiwibGFzdG5hbWUiOiJvb29vIiwiZW1haWwiOiJvb29yMTIzQGdtYWlsLmNvbSIsIm1vYmlsZSI6IjE4OTg0NTY3ODkwIiwicGFzc3dvcmQiOiJhYmMxMiIsImdlbmRlciI6Im1hbGUiLCJjb3VudHJ5IjoiaW5kaWEiLCJzdGF0ZSI6Imd1amFyYXQiLCJwcm9maWxlSW1hZ2UiOiJnZWdycnRocmgiLCJpYXQiOjE2MzM3MTM2MzksImV4cCI6MTYzMzcxNzIzOX0.uZwe4RjOOZw_vC4MJW-G0c1LMZCsCrtVJ_qmj-PHctw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/usersApi/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usersApi",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/registerApi/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "demo12@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "demo12",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "1243567809",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/registerApi/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registerApi",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/usersApi/profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJkZW1vIiwibGFzdG5hbWUiOiJkZW1vIiwiZW1haWwiOiJkZW1vMTJAZ21haWwuY29tIiwibW9iaWxlIjoiMTI0MzU2NzgwOSIsInBhc3N3b3JkIjoiZGVtbzEyIiwiZ2VuZGVyIjoibWFsZSIsImNvdW50cnkiOiJpbmRpYSIsInN0YXRlIjoiZ3VqYXJhdCIsInByb2ZpbGVJbWFnZSI6ImFkc2ZzZGZnIiwiaWF0IjoxNjMzNzUxMjU2fQ.b3m6ULLTVyfy78Q8cWVLcjRE3fW55PtltEZGq3MiKA8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/usersApi/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usersApi",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/usersApi/updateprofile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJkZW1vIiwibGFzdG5hbWUiOiJkZW1vIiwiZW1haWwiOiJkZW1vMTJAZ21haWwuY29tIiwibW9iaWxlIjoiMTI0MzU2NzgwOSIsInBhc3N3b3JkIjoiZGVtbzEyIiwiZ2VuZGVyIjoibWFsZSIsImNvdW50cnkiOiJpbmRpYSIsInN0YXRlIjoiZ3VqYXJhdCIsInByb2ZpbGVJbWFnZSI6ImFkc2ZzZGZnIiwiaWF0IjoxNjMzNzUxMjU2fQ.b3m6ULLTVyfy78Q8cWVLcjRE3fW55PtltEZGq3MiKA8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstname",
+							"value": "demo1",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "demo1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/usersApi/updateprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usersApi",
+						"updateprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/chatAction/create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJ0ZXN0IiwibGFzdG5hbWUiOiJ0ZXN0IiwiZW1haWwiOiJ0ZXN0MTJAZ21haWwuY29tIiwibW9iaWxlIjoiMTI0MzA2NzgwOSIsInBhc3N3b3JkIjoidGVzdDEyIiwiZ2VuZGVyIjoibWFsZSIsImNvdW50cnkiOiJpbmRpYSIsInN0YXRlIjoiZ3VqYXJhdCIsInByb2ZpbGVJbWFnZSI6ImFkc2ZzZGZnIiwiaWF0IjoxNjMzNzY1NTk0fQ.Gy9PKG3HjsTlMZhyZvQI-TDktABUFTngRlYj0zx5OMs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "clientId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "fine",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/chatAction/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"chatAction",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/chatAction/history",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJkZW1vIiwibGFzdG5hbWUiOiJkZW1vIiwiZW1haWwiOiJkZW1vMTJAZ21haWwuY29tIiwibW9iaWxlIjoiMTI0MzU2NzgwOSIsInBhc3N3b3JkIjoiZGVtbzEyIiwiZ2VuZGVyIjoibWFsZSIsImNvdW50cnkiOiJpbmRpYSIsInN0YXRlIjoiZ3VqYXJhdCIsInByb2ZpbGVJbWFnZSI6ImFkc2ZzZGZnIiwiaWF0IjoxNjMzNzUxMjU2fQ.b3m6ULLTVyfy78Q8cWVLcjRE3fW55PtltEZGq3MiKA8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/chatAction/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"chatAction",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/chatAction/conversationList",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdG5hbWUiOiJkZW1vIiwibGFzdG5hbWUiOiJkZW1vIiwiZW1haWwiOiJkZW1vMTJAZ21haWwuY29tIiwibW9iaWxlIjoiMTI0MzU2NzgwOSIsInBhc3N3b3JkIjoiZGVtbzEyIiwiZ2VuZGVyIjoibWFsZSIsImNvdW50cnkiOiJpbmRpYSIsInN0YXRlIjoiZ3VqYXJhdCIsInByb2ZpbGVJbWFnZSI6ImFkc2ZzZGZnIiwiaWF0IjoxNjMzNzUxMjU2fQ.b3m6ULLTVyfy78Q8cWVLcjRE3fW55PtltEZGq3MiKA8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3001/chatAction/conversationList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"chatAction",
+						"conversationList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/registerApi/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/registerApi/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registerApi",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
