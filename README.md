@@ -7,7 +7,7 @@ create test db in your phpmyadmin
 
 implement all functionality jwt authentication without password bcrypt , image upload, seeder, admin apis & socket
 
-all apis in postman collection
+all apis in postman collection into folder
 
 note: your password set in knexfile.js if you have in phpmyadmin
 
