@@ -1,6 +1,9 @@
 # elaunch
 
-run project using command :  node app  & node chat
+install depandency : npm i  
+run project using command : node app  & node chat
+
+create test db in your phpmyadmin
 
 implement all functionality jwt authentication without password bcrypt , image upload, seeder, admin apis & socket
 
